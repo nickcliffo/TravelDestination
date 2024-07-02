@@ -20,7 +20,7 @@ header img {
     border-radius: 15px;
 }
 
-.information h1 {
+.information h2 {
     font-family: Arial, Helvetica, sans-serif;
     border-bottom: solid 1px black;
     padding-top: 10px;
@@ -29,7 +29,7 @@ header img {
     padding-bottom: 20px;
 }
 
-.gallery h1 {
+.gallery h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     border-bottom: solid 1px black;
@@ -44,38 +44,17 @@ div.scroll-container img {
     max-width: 480px;
 }
 
-.rentals h1 {
-    border-bottom: solid 1px white;
-  }
-
-  .rentals{
-    text-align: center;
-    background-color: #333;
-    color: white;
-    border-radius: 15px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
-    background-color: #333;
-    border-radius: 15px;
-    margin: 80px;
-  }
-
-  .rentalimg img {
-    width: 100%;
-    border-radius: 15px;
-  }
-
-  .rentals {
+.rentals {
     display: none;
-  }
+}
 
-  .rentalimg {
+.rentalimg {
     display: none;
-  }
+}
 
-
-
+.ftf {
+    display: none;
+}
 
 footer p {
     border-top: solid 1px black;
@@ -86,7 +65,7 @@ footer p {
 @media screen and (min-width: 800px) {
 
     .rentals {
-        display: contents;
+        display: block;
     }
 
     .rentalimg {
@@ -101,31 +80,107 @@ footer p {
         white-space: nowrap;
         padding: 10px;
         border-radius: 15px;
-      }
-      
-      div.scroll-container img {
+    }
+
+    div.scroll-container img {
         padding: 10px;
         max-width: 800px;
-      }
+    }
 
-      .information h1 {
+    .information h2 {
         color: white;
         border-bottom: solid 1px white;
-      }
+    }
 
-      .information{
+    .information {
         background-color: #333;
         border-radius: 15px;
         margin: 80px;
-      }
+    }
 
-      .information p {
+    .information p {
         background-color: #333;
         color: white;
         border-radius: 15px;
         padding-left: 150px;
         padding-right: 150px;
         padding-bottom: 20px;
-      }
+    }
 
+    .rentals h2 {
+        border-bottom: solid 1px white;
+    }
+
+    .rentals {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        border-radius: 15px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 20px;
+        background-color: #333;
+        border-radius: 15px;
+        margin: 80px;
+    }
+
+    .rentalimg img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1129px) {
+
+    .ftf {
+        display: block;
+    }
+
+    .ftf {
+        padding-top: 100px;
+        line-height: 1.5;
+    }
+
+    .facts,
+    .tips,
+    .flags {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        text-align: center;
+        color: white;
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+        border-radius: 15px;
+    }
+
+    .facts,
+    .tips,
+    .flags,
+    ul li {
+        list-style-type: none;
+        background-color: #333;
+    }
+
+    .flags {
+        margin-right: 0%;
+    }
+
+    .facts h2 {
+        margin-left: 20px;
+    }
+
+    .tips h2 {
+        margin-left: 10px;
+    }
+
+    .flags h2 {
+        margin-left: 30px;
+    }
+
+    footer {
+        margin-top: 300px;
+
+    }
 }
